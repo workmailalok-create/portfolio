@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Mishra | Agentic AI Specialist</title>
+    <style>
+        :root {
+            --primary: #00A1E0; /* Salesforce Blue-ish */
+            --secondary: #032D60;
+            --accent: #F4F6F9;
+            --text-dark: #16325C;
+            --text-light: #54698D;
+            --white: #ffffff;
+            --badge-bg: #E1F5FE;
+            --badge-text: #0277BD;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--accent);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero */
+        header {
+            background: var(--white);
+            padding: 60px 0;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .profile-name {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .profile-title {
+            font-size: 1.25rem;
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Certification Badge */
+        .cert-highlight {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #00A1E0 0%, #005FB2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0, 161, 224, 0.3);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .cert-highlight span {
+            margin-left: 10px;
+        }
+
+        /* Sections */
+        section {
+            background: var(--white);
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+        }
+
+        /* Experience & Projects */
+        .job-card, .project-card {
+            margin-bottom: 30px;
+        }
+
+        .job-card:last-child, .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .company {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .profile-name { font-size: 2.2rem; }
+            .job-header { flex-direction: column; }
+            section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="profile-name">Alok Mishra</h1>
+            <p class="profile-title">Agentic AI Architect | Salesforce Ecosystem Expert</p>
+            
+            <div class="contact-info">
+                alok.mishra@example.com • linkedin.com/in/alokmishra • github.com/alokmishra
+            </div>
+
+            <div class="cert-highlight">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>Salesforce Certified Agentforce</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Executive Summary</h2>
+            <p>
+                Specialized in designing and deploying <strong>Agentic AI workflows</strong> that go beyond simple chat interfaces to autonomous action execution. Expert in leveraging the <strong>Salesforce Agentforce</strong> platform to build agents that reason, plan, and orchestrate complex business processes within the CRM. Passionate about bridging the gap between Large Language Models (LLMs) and deterministic enterprise data.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Arsenal</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Agentic AI Patterns (ReAct, COT)</span>
+                <span class="skill-tag">Salesforce Agentforce</span>
+                <span class="skill-tag">Einstein Copilot Studio</span>
+                <span class="skill-tag">Python & LangChain</span>
+                <span class="skill-tag">Apex & LWC</span>
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">RAG Architecture</span>
+                <span class="skill-tag">Data Cloud</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior AI Engineer</span> | <span class="company">Tech Innovators Ltd.</span>
+                    </div>
+                    <span class="date">2023 - Present</span>
+                </div>
+                <ul>
+                    <li>Spearheaded the implementation of <strong>Agentforce Agents</strong> for Tier-1 Customer Support, reducing human ticket volume by 40% through autonomous resolution.</li>
+                    <li>Designed an agentic framework where AI agents can autonomously query Data Cloud, update records, and trigger Flows without human intervention.</li>
+                    <li>Integrated external LLMs (OpenAI/Anthropic) with Salesforce via API to perform complex sentiment analysis and routing logic.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Salesforce Developer</span> | <span class="company">Cloud Solutions Inc.</span>
+                    </div>
+                    <span class="date">2020 - 2023</span>
+                </div>
+                <ul>
+                    <li>Developed custom Einstein Bots that served as the precursor to full agentic adoption.</li>
+                    <li>Optimized Apex triggers and Flows to ensure low-latency performance when called by AI agents.</li>
+                    <li>Built Lightning Web Components (LWC) to visualize agent reasoning steps for compliance auditing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+            
+            <div class="project-card">
+                <div class="job-header">
+                    <span class="job-title">"SalesGenie" - Autonomous Sales Agent</span>
+                </div>
+                <p>
+                    Implemented a Salesforce Agentforce agent that autonomously nurtures leads. The agent analyzes email intent, drafts personalized replies using CRM data, checks calendar availability, and books meetings—requiring approval only for final contract negotiation.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="job-header">
+                    <span class="job-title">Dynamic Inventory Orchestrator</span>
+                </div>
+                <p>
+                    Created a multi-agent system where a "Service Agent" communicates with an "ERP Agent" to check real-time stock and process RMAs autonomously. Utilized <strong>Reasoning Engines</strong> to handle edge cases where stock was low but incoming shipments were confirmed.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education & Certifications</h2>
+            <ul>
+                <li><strong>Salesforce Certified Agentforce</strong> (2025)</li>
+                <li><strong>Salesforce Certified AI Specialist</strong></li>
+                <li><strong>B.Tech in Computer Science</strong> - University of Technology</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Alok Mishra. Built with Agentic Precision.</p>
+    </footer>
+
+</body>
+</html>
